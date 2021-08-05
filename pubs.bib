@@ -76,49 +76,6 @@ journal = {CEAS Aeronautical Journal},
 title = {{Estimating fuel consumption from radar tracks A validation exercise using FDR and radar tracks from descent trajectories}},
 year = {2020}
 }
-@phdthesis{Dalmau2019,
-abstract = {The growth in traffic increased the pressure on the environmental sustainability of air transport. In this context,
-many research effort has been devoted to minimise the environmental impact in the different phases
-of flight. Continuous descent operations, ideally performed with the engines at idle from the cruise altitude
-to right before landing, have shown to reduce fuel, noise nuisance and gaseous emissions if compared to
-conventional descents. However, this type of operations suffer from a well known drawback: the loss of
-predictability from the air traffic control point of view in terms of overfly times at the different waypoints
-of the route. Due to this loss of predictability, air traffic controllers require large separation buffers, thus
-reducing the capacity of the airport.
-Previous works investigating this issue showed that the ability to meet a controlled time of arrival
-at a metering fix could enable continuous descent operations while simultaneously maintaining airport
-throughput. In this context, the planning and guidance functions of state-of-the-art flight management
-systems need to be modernised. On-board trajectory planners capable to generate an optimal trajectory
-plan satisfying time constraints introduced during the flight are seldom, mainly because the real-time optimisation
-of aircraft trajectories is still elusive. Furthermore, the time scale and spatial resolution of the
-wind forecasts used by these trajectory planners are far from being adequate to generate accurate flight
-time predictions. Finally, there exist guidance strategies capable to accurately comply with time constraints
-enforced at a certain fix in the trajectory plan, yet they are not specifically designed to minimise the
-environmental impact.
-This PhD thesis aims at investigating fast optimisation techniques to enable real-time updates of the
-optimal trajectory plan subject to time constraints during the descent; wind networking concepts to generate
-more accurate and up-to-date wind forecasts and, consequently, time predictions; and more robust an
-efficient guidance strategies to reduce the environmental impact at the maximum extent while complying
-with the time constraints of the trajectory plan.
-First, the feasible time window at a metering fix that could be achieved during a descent requiring
-neither thrust nor speed brakes usage is quantified as a function of the aircraft states (altitude, distance to
-the metering fix and airspeed), aiming to assess the feasibility of guidance strategies that take advantage of
-time and energy management concepts. Then, the performance of four of these guidance strategies is compared
-in terms of environmental impact mitigation and ability to satisfy operational constraints. Results
-from the comparison reveal that model predictive control, a strategy based on a frequent re-calculation of
-the optimal trajectory plan during the execution of the descent, is the most robust in terms of energy and
-time deviation at the metering fix, providing at the same time excellent environmental impact mitigation
-figures. However, the execution time required to solve a rigorous trajectory optimisation problem at each
-re-calculation instant remains a critical limitation for practical applications. In order to address this issue,
-a variant of the model predictive control strategy that allows for fast updates of the optimal trajectory plan
-based on parametric sensitivities is proposed, which shows analogous results yet halving the time needed
-to update the optimal trajectory plan. Finally, the potential benefits of using wind observations broadcast by nearby aircraft to reconstruct the wind profile downstream right before updating the optimal trajectory plan when using model predictive control is also investigated. Promising results show that the combination of model predictive control with wind networking concepts could enable optimal descents without degrading the capacity of the airport.},
-author = {Dalmau, Ramon},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau - 2019 - Optimal trajectory management for aircraft descent operations subject to time constraints.pdf:pdf},
-school = {Technical University of Catalonia (UPC)},
-title = {{Optimal trajectory management for aircraft descent operations subject to time constraints}},
-year = {2019}
-}
 @inproceedings{Dalmau2019a,
 abstract = {The uncertainty of the takeoff time is a major contribution to the loss of trajectory predictability. At present, the Estimated TakeOff Time (ETOT) for each individual flight is extracted from the Enhanced Traffic Flow Management System (ETFMS) messages, which are sent each time there is an event triggering a recalculation of the flight data by the Network Manager Operations Centre. However, aircraft do not always takeoff at the ETOTs reported by the ETFMS due to several factors, including congestion and bad weather conditions at the departure airport, reactionary delays and air traffic flow management slot improvements. This paper presents two machine learning models that take into account several of these factors to improve the takeoff time prediction of individual flights one hour before their estimated off-block time. Predictions performed by the model trained on three years of historical flight and weather data show a reduction on the takeoff time prediction error of about 30{\%} as compared to the ETOTs reported by the ETFMS.},
 address = {Athens, Greece},
