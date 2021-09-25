@@ -1,13 +1,14 @@
 @phdthesis{DalmauPhD,
   author       = {Dalmau, Ramon}, 
-  title        = {Optimal trajectory management for aircraft descent operations subject to time constraints},
-  school       = {Technical University of Catalonia},
+  title        = {{Optimal trajectory management for aircraft descent operations subject to time constraints}},
+  school       = {{Technical University of Catalonia}},
   year         = 2019,
   address      = {Spain},
   month        = 6,
 }
 @inproceedings{Dalmau2021c,
 address = {New Orleans, LA},
+abstract = {The vertical trajectory plan (altitude and speed) corresponding to the descent phase of a modern airliner is computed by the on-board flight management system  while the aircraft is still in cruise. As long as the constraints on the arrival procedure allow, this system plans for an idle descent and the exact location of the (optimal) top of descent (TOD) is determined in this process. In busy terminal airspace, however, air traffic control officers -- motivated by the needs to maintain a safe and expeditious flow of aircraft -- might require to start the descents before the TOD computed by each particular arriving aircraft. In such situations, most flight guidance systems aim to intercept the original altitude plan from below, by using a shallower descent angle while keeping the speed plan, requiring in this way, additional thrust. This leads, consequently, to higher fuel consumption figures. The objective of this paper is threefold. Firstly, it characterises and quantifies these fuel inefficiencies for an Airbus A320, using accurate aircraft performance data and a trajectory computation software from the manufacturer. Secondly, it proposes a methodology to automatically identify early descents and to extract the key parameters required to compute the fuel inefficiencies by only observing ADS-B (automatic dependent surveillance-broadcast) data. Finally, the method is applied to a case study with 4,139 real ADS-B trajectories in Amsterdam-Schiphol (The Netherlands) terminal airspace; showing that early descents are very frequent and that they increase the fuel consumption by a 5%, in average.}
 author = {Dalmau, Ramon and Sun, Junzi and Prats, Xavier},
 booktitle = {14th USA/Europe Air Traffic Management Research and Development Seminar},
 title = {{Fuel Inefficiency Characterisation and Assessment due to Early Execution of Top of Descents}},
@@ -15,6 +16,7 @@ year = {2021}
 }
 @inproceedings{Dalmau2021b,
 address = {New Orleans, LA},
+abstract = {In Europe, the most common air traffic flow management measure used by the network manager to resolve imbalances between demand and capacity is to impose regulations, which delay flights on ground. The ground delay assigned to a regulated flight may change from the time it is caught by the regulation(s) to the actual departure. This variability of the delay stems from the mechanisms used by the computer-assisted slot allocation system to manage the slots of the regulations. At present, the information on the delay evolution of a regulated flight is very limited for the airspace users, raising high uncertainty on the delay propagation and the operations management throughout the day. This paper describes the architecture of a machine learning model that, trained on historical data,is able predict the evolution of the delay for a regulated flight. Such evolution is expressed by using various indicators, which were selected by the airspace users involved in the project. The proposed model is able to predicted the trend of the delay with an accuracy of 0.75. Furthermore, results show that the model is able to reduce the prediction error (measured as the difference between the actual and the predicted delay) up to 63%, if compared to the current delay as reported by the enhanced tactical flow management system.}
 author = {Dalmau, Ramon and Genestier, Brice and Anoraud, Camille and Choroba, Peter and Smith, Darren},
 booktitle = {14th USA/Europe Air Traffic Management Research and Development Seminar},
 title = {{A Machine Learning Approach to Predict the Evolution of Air Traffic Flow Management Delay}},
@@ -22,10 +24,12 @@ year = {2021}
 }
 @inproceedings{Dalmau2021a,
 address = {New Orleans, LA},
+abstract = {Airport night curfews are restrictions applied at some airports that prohibit operations during certain hours of the night, aiming to reduce noise nuisance in the surrounding neighborhood. Despite effectively reducing noise exposure for local residents, these environmental measures can have negative economic and operational effects on the airspace user and the airport, as well as a negative experience for the passenger. This paper presents a model that, for each flight and well before the starting time of the curfew period, is able to provide the probability (risk) of night curfew infringement. The risk of night curfew infringement is computed from the start time of the restriction and the distribution of in-block times. The former is known for each airport, while the latter is provided by a neural network which was trained on historical data to predict the propagation of arrival delay along the sequence of flights of an aircraft. Results show that the model significantly improves the in-block time predictions, if compared to the current solution. Furthermore, the risk indicator could assist in identifying flights with potential risk of night curfew infringements within a reasonable time frame to implement effective mitigation actions.}
 author = {Dalmau, Ramon and Murgese, Giuseppe and De Wandeler, Yves and Correira, Ricardo and Marsden, Alan},
 booktitle = {14th USA/Europe Air Traffic Management Research and Development Seminar},
 title = {{Early Detection of Night Curfew Infringements by Delay Propagation with Neural Networks}},
-year = {2021}
+year = {2021},
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @article{Dalmau2021,
 abstract = {The uncertainty of the takeoff time is a major contribution to the loss of trajectory predictability. At present, the Estimated TakeOff Time (ETOT) for each individual flight is extracted from the Enhanced Traffic Flow Management System (ETFMS) messages, which are sent each time there is an event triggering a recalculation of the flight data by the Network Manager Operations Centre. However, aircraft do not always takeoff at the ETOTs reported by the ETFMS due to several factors, including congestion and bad weather conditions at the departure airport, reactionary delays and air traffic flow management slot improvements. This paper presents two machine learning models that take into account several of these factors to improve the takeoff time prediction of individual flights one hour before their estimated off-block time. Predictions performed by the model trained on three years of historical flight and weather data show a reduction on the takeoff time prediction error of about 30{\%} as compared to the ETOTs reported by the ETFMS.},
@@ -47,17 +51,16 @@ year = {2020},
 abstract={Air traffic control is performed in a centralised way by human controllers, which monitor and manage all aircraft flying through the airspace sector under their responsibility. Air traffic controllers give lateral (including heading and speed changes) or vertical instructions to ensure safe separation between aircraft, simultaneously trying to minimise deviations from the optimal trajectory plan. The continuous growth of air traffic before the COVID-19 crisis of 2020 bring up the matter of helping air traffic controllers in high-density traffic scenarios, where safety and flight efficiency cannot be compromised. Artificial intelligence has been proclaimed as successful to provide timely decision-support advice in many real-life applications that may be safety-critical. The recent advancements of reinforcement learning algorithms have been a key for many of these achievements. This paper presents a recommendation tool based on multi-agent reinforcement learning to support air traffic controllers in complex traffic scenarios. The policy function, which selects the \emph{best} actions to solve potential losses of separation, was trained by gathering experiences in a controlled simulation environment. The policy model, based on message passing neural networks, allows flights (agents) to exchange information through a communication protocol before proposing a joint action that promotes flight efficiency and penalises dangerous situations.}
 }
 @article{XU2020229,
-title = "A framework for collaborative air traffic flow management minimizing costs for airspace users: Enabling trajectory options and flexible pre-tactical delay management",
-journal = "Transportation Research Part B: Methodological",
-volume = "134",
-pages = "229 - 255",
-year = "2020",
-issn = "0191-2615",
-doi = "https://doi.org/10.1016/j.trb.2020.02.012",
-url = "http://www.sciencedirect.com/science/article/pii/S0191261518310464",
-author = "Yan Xu and Ramon Dalmau and Marc Melgosa and Adeline Montlaur and Xavier Prats",
-keywords = "Air traffic flow management, Trajectory based operations, Demand and capacity balancing, Collaborative decision-making, Trajectory options",
-abstract = "This paper proposes a collaborative air traffic flow management (ATFM) framework, in the scope of trajectory based operations, aiming to improve the cost-efficiency for airspace users (AUs) when facing ATFM regulations. The framework consists of four modules. The first one involves the AUs initially scheduling their preferred trajectories for all their flights. Based on this initial demand, the second module (assumed to be on the Network Manager -NM- side) detects time-varying hotspots (i.e. overloaded sectors along the day). In the third module, hotspot information is shared back to the AUs who plan alternative trajectory options to avoid crossing these congested airspace volumes (in the lateral and vertical domain); as well as providing to the NM different pre-tactical delay management preferences (including ground holding, linear holding, air holding and pre-tactical delay recovery); based on their internal cost breakdown structures. Incorporating all these potential combined options, the last module computes the best trajectory selections and the optimal distribution of delay assignments, such that the cost deviation from the initial status (all the user-preferred trajectories) is minimized. This model is formulated as mixed integer linear programming (MILP) and validated by a real-world case study focused on 24 h of traffic over the French airspace. Results using the proposed framework suggest a significant system delay reduction by nearly 97% over the existing method, whilst yielding an average of less than 100 kg extra fuel consumption and 50 Euro extra route charges for the 11% flights diverted to their alternative trajectories."
+title = {{A framework for collaborative air traffic flow management minimizing costs for airspace users: Enabling trajectory options and flexible pre-tactical delay management}},
+journal = {Transportation Research Part B: Methodological},
+volume = {134},
+pages = {229--255},
+year = {2020},
+issn = {0191-2615},
+doi = {10.1016/j.trb.2020.02.012},
+author = {Yan Xu and Ramon Dalmau and Marc Melgosa and Adeline Montlaur and Xavier Prats},
+keywords = {Air traffic flow management, Trajectory based operations, Demand and capacity balancing, Collaborative decision-making, Trajectory options},
+abstract = {This paper proposes a collaborative air traffic flow management (ATFM) framework, in the scope of trajectory based operations, aiming to improve the cost-efficiency for airspace users (AUs) when facing ATFM regulations. The framework consists of four modules. The first one involves the AUs initially scheduling their preferred trajectories for all their flights. Based on this initial demand, the second module (assumed to be on the Network Manager -NM- side) detects time-varying hotspots (i.e. overloaded sectors along the day). In the third module, hotspot information is shared back to the AUs who plan alternative trajectory options to avoid crossing these congested airspace volumes (in the lateral and vertical domain); as well as providing to the NM different pre-tactical delay management preferences (including ground holding, linear holding, air holding and pre-tactical delay recovery); based on their internal cost breakdown structures. Incorporating all these potential combined options, the last module computes the best trajectory selections and the optimal distribution of delay assignments, such that the cost deviation from the initial status (all the user-preferred trajectories) is minimized. This model is formulated as mixed integer linear programming (MILP) and validated by a real-world case study focused on 24 h of traffic over the French airspace. Results using the proposed framework suggest a significant system delay reduction by nearly 97% over the existing method, whilst yielding an average of less than 100 kg extra fuel consumption and 50 Euro extra route charges for the 11% flights diverted to their alternative trajectories.}
 }
 @article{Herrema2020,
 author = {Herrema, Floris and Dalmau, Ramon},
@@ -71,18 +74,18 @@ year = {2020}
 @article{Dalmau2020,
 abstract = {Fuel consumption is one of the major considerations for both the impact of aviation in the environment and the cost of operations. This paper assesses the accuracy of a method capable of producing aircraft fuel estimates based on their 4D trajectory timestamps and the weather forecast. Fuel consumption estimates generated for 2448 descents are compared with the flight data recorder (FDR) values provided by the airline. Fuel consumption is estimated by taking the 4D trajectory from two different sources: the FDR system itself and surveillance radar tracks. In both cases, the Base of Aircraft Data (BADA) and a model that fits manufacturers' performance data to polynomial functions are used to represent aircraft performance. Results obtained with the later show that fuel usage could be estimated with an accuracy of 16 kg (4.8{\%}) by using the 4D trajectory as reported by the FDR system and 28 kg (7.8{\%}) by using surveillance radar observations. It is also observed that the BADA 3.6 model underestimates the fuel consumption, illustrating the need for an improved performance model in the terminal manoeuvring area. This method could be the cornerstone for the calculation of advanced performance indicators to measure flight efficiency (and environmental impact) in post-operational assessments, since it enables the estimation of the full state vector of an aircraft, including variables that are not explicitly included in the surveillance data (such the fuel, thrust, etc.).},
 author = {Dalmau, Ramon and Prats, Xavier and Ramonjoan, Alex and Soley, Santiago},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau et al. - 2020 - Estimating fuel consumption from radar tracks A validation exercise using FDR and radar tracks from descent traje.pdf:pdf},
 journal = {CEAS Aeronautical Journal},
 title = {{Estimating fuel consumption from radar tracks A validation exercise using FDR and radar tracks from descent trajectories}},
-year = {2020}
+year = {2020},
+doi = {10.1007/s13272-020-00441-2},
+pages = {355--365},
+volume = {11}
 }
 @inproceedings{Dalmau2019a,
 abstract = {The uncertainty of the takeoff time is a major contribution to the loss of trajectory predictability. At present, the Estimated TakeOff Time (ETOT) for each individual flight is extracted from the Enhanced Traffic Flow Management System (ETFMS) messages, which are sent each time there is an event triggering a recalculation of the flight data by the Network Manager Operations Centre. However, aircraft do not always takeoff at the ETOTs reported by the ETFMS due to several factors, including congestion and bad weather conditions at the departure airport, reactionary delays and air traffic flow management slot improvements. This paper presents two machine learning models that take into account several of these factors to improve the takeoff time prediction of individual flights one hour before their estimated off-block time. Predictions performed by the model trained on three years of historical flight and weather data show a reduction on the takeoff time prediction error of about 30{\%} as compared to the ETOTs reported by the ETFMS.},
 address = {Athens, Greece},
 author = {Dalmau, Ramon and Ballerini, Franck and Naessens, Herbert and Belkoura, Seddik and Wangnick, Sebastian},
 booktitle = {9th SESAR Innovation Days (SID)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau et al. - 2019 - Improving the Predictability of Take-off Times with Machine Learning A case study for the Maastricht upper area c.pdf:pdf},
-keywords = {Index Terms-trajectory prediction,machine learning},
 title = {{Improving the Predictability of Take-off Times with Machine Learning A case study for the Maastricht upper area control centre area of responsibility}},
 year = {2019}
 }
@@ -91,17 +94,17 @@ abstract = {The runway configuration of an airport is the combination of runways
 address = {Athens, Greece},
 author = {Dalmau, Ramon and Herrema, Floris},
 booktitle = {9th SESAR Innovation Days (SID)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau, Herrema - 2019 - Encoder-Decoder Approach to Predict Airport Operational Runway Configuration A case study for Amsterdam Schipho.pdf:pdf},
-keywords = {Index Terms-runway configuration,machine learning},
 title = {{Encoder-Decoder Approach to Predict Airport Operational Runway Configuration A case study for Amsterdam Schiphol airport}},
-url = {https://ext.eurocontrol.int/airport},
 year = {2019}
 }
 @article{Dalmau2020a,
 abstract = {The ability to meet a controlled time of arrival during a continuous descent operation will enable environmentally friendly and fuel efficient descent operations while simultaneously maintaining airport throughput. However, if the wind forecast used to compute the initial trajectory plan is not accurate enough, the guidance system will need to correct time deviations from the plan during the execution of the descent. Previous work proposed an on-board guidance strategy based on model predictive control, which repeatedly updates the trajectory plan in real-time from the current aircraft state and for the remainder of the descent. However, the wind conditions downstream, at altitudes not explored yet, were difficult to predict due to the lack of data. This paper shows the potential benefits of using wind observations, broadcast by nearby aircraft, to reconstruct the wind profile downstream. The wind profile in the trajectory optimization problem is modeled as a spline, which control points are updated to fit the observations before re-planning the trajectory. Results from simulations using realistic wind data show that the performance of model predictive control significantly improves when including up-to-date wind observations, in terms of time and energy errors at the metering fix and fuel consumption.},
 author = {Dalmau, Ramon and Prats, Xavier and Baxley, Brian},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau, Prats, Baxley - 2020 - Using Broadcast Wind Observations to Update the Optimal Descent Trajectory in Real-time.pdf:pdf},
 journal = {Journal of Air Transportation},
+doi = {doi.org/10.2514/1.D0174},
+volume = {28},
+number = {3},
+pages = {82-92},
 title = {{Using Broadcast Wind Observations to Update the Optimal Descent Trajectory in Real-time}},
 year = {2020}
 }
@@ -110,8 +113,6 @@ abstract = {The base of aircraft data (BADA) model provides accurate modelling o
 address = {Salzburg, Austria},
 author = {Dalmau, Ramon and Melgosa, Marc and Prats, Xavier},
 booktitle = {8th SESAR Innovation Days (SID)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau, Melgosa, Prats - 2018 - pyBADA Easy BADA integration in python for rapid prototyping.pdf:pdf},
-keywords = {BADA,Python,aircraft performance,optimisation},
 title = {{pyBADA: Easy BADA integration in python for rapid prototyping}},
 year = {2018}
 }
@@ -120,7 +121,6 @@ abstract = {Aiming to a more collaborative demand and capacity balancing (DCB), 
 address = {Castelldefels, Spain},
 author = {Xu, Yan and Dalmau, Ramon and Melgosa, Marc and Montlaur, Adeline and Prats, Xavier},
 booktitle = {8th International Conference on Research in Air Transportation (ICRAT)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Xu et al. - 2018 - Alternative Trajectory Options for Delay Reduction in Demand and Capacity Balancing.pdf:pdf},
 title = {{Alternative Trajectory Options for Delay Reduction in Demand and Capacity Balancing}},
 year = {2018}
 }
@@ -129,9 +129,7 @@ abstract = {Trajectory prediction and optimisation algorithms will be the keysto
 address = {Castelldefels, Spain},
 author = {Dalmau, Ramon and Melgosa, Marc and Vilardaga, Santi and Prats, Xavier},
 booktitle = {8th International Conference on Research in Air Transportation (ICRAT)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau et al. - 2018 - A Fast and Flexible Aircraft Trajectory Predictor and Optimiser for ATM Research Applications.pdf:pdf},
 title = {{A Fast and Flexible Aircraft Trajectory Predictor and Optimiser for ATM Research Applications}},
-url = {http://apache-sesar.barcelonatech-upc.eu},
 year = {2018}
 }
 @inproceedings{Dalmau2018b,
@@ -139,7 +137,6 @@ abstract = {Fuel consumption is one of the major considerations for both the imp
 address = {Castelldefels, Spain},
 author = {Dalmau, Ramon and Prats, Xavier and Ramonjoan, Alex and Soley, Santiago},
 booktitle = {8th International Conference on Research in Air Transportation (ICRAT)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau et al. - 2018 - Estimating fuel consumption from radar tracks A validation exercise using FDR data from descent trajectories.pdf:pdf},
 title = {{Estimating fuel consumption from radar tracks A validation exercise using FDR data from descent trajectories}},
 year = {2018}
 }
@@ -148,7 +145,6 @@ abstract = {This paper presents a method to implement linear holding (LH) for fl
 address = {Washington D.C},
 author = {Xu, Yan and Yin, Suwan and Dalmau, Ramon and Prats, Xavier and Han, Ke},
 booktitle = {96th Transportation Research Board annual meeting},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Xu et al. - 2017 - Linear Holding for Reducing Additional Delays Experienced by Flights Subject to Ground Holding at no Extra Fuel Cost.pdf:pdf},
 title = {{Linear Holding for Reducing Additional Delays Experienced by Flights Subject to Ground Holding at no Extra Fuel Cost}},
 year = {2017}
 }
@@ -157,7 +153,6 @@ abstract = {From 9-26 October 2015 the Netherlands Aerospace Centre (NLR) in coo
 address = {Brussels, Belgium},
 author = {Verhoeven, Ronald and Bussink, Frank and Prats, Xavier and Dalmau, Ramon},
 booktitle = {2nd Greener Aviation Conference},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Verhoeven et al. - 2016 - Time and Energy Managed Operations (TEMO) Cessna Citation II Flight Trials.pdf:pdf},
 title = {{Time and Energy Managed Operations (TEMO): Cessna Citation II Flight Trials}},
 year = {2016}
 }
@@ -166,7 +161,6 @@ abstract = {Continuous descent operations (CDO) with controlled times of arrival
 address = {Philadelphia, PA},
 author = {Dalmau, Ramon and Prats, Xavier},
 booktitle = {7th International Conference on Research in Air Transportation (ICRAT)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau, Prats - 2016 - Assessment of the feasible CTA windows for efficient spacing with energy-neutral CDO(2).pdf:pdf},
 title = {{Assessment of the feasible CTA windows for efficient spacing with energy-neutral CDO}},
 year = {2016}
 }
@@ -175,17 +169,15 @@ abstract = {Speed reduction strategies have proved to be useful to recover delay
 address = {Philadelphia, PA},
 author = {Xu, Yan and Dalmau, Ramon and Prats, Xavier},
 booktitle = {7th International Conference on Research in Air Transportation (ICRAT)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Xu, Dalmau, Prats - 2016 - Effects of speed reduction in climb, cruise and descent phases to generate linear holding at no extra fuel co.pdf:pdf},
 title = {{Effects of speed reduction in climb, cruise and descent phases to generate linear holding at no extra fuel cost}},
 year = {2016},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @inproceedings{Camargo-Forero2016,
 abstract = {High performance computing (HPC), both at hardware and software level, has demonstrated significant improvements in processing large datasets in a timely manner. However, HPC in the field of air traffic management (ATM) can be much more than only a time reducing tool. It could also be used to build an ATM simulator in which distributed scenarios where decentralized elements (airspace users) interact through a centralized manager in order to generate a trajectory-optimized conflict-free scenario. In this work, we introduce an early prototype of an ATM simulator, focusing on air traffic flow management at strategic, pre-tactical and tactical levels, which allows the calculation of safety and efficiency indicators for optimized trajectories, both at individual and network level. The software architecture of the simulator, relying on a HPC cluster of computers, has been preliminary tested with a set of flights whose trajectory vertical profiles have been optimized according to two different concepts of operations: conventional cruise operations (i.e. flying at constant altitudes and according to the flight levels scheme rules) and continuous climb cruise operations (i.e., optimizing the trajectories with no vertical constraints). The novel ATM simulator has been tested to show preliminary benchmarking results between these two concepts of operations. The simulator here presented can contribute as a testbed to evaluate the potential benefits of future Trajectory Based Operations and to understand the complex relationships among the different ATM key performance areas.},
 address = {Philadelphia, PA},
 author = {Camargo-Forero, Leonardo and Dalmau, Ramon and Ruiz, Sergio and Prats, Xavier},
 booktitle = {7th International Conference on Research in Air Transportation (ICRAT)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Camargo-Forero et al. - 2016 - High performance computing simulator for the performance assessment of trajectory based operations.pdf:pdf},
 title = {{High performance computing simulator for the performance assessment of trajectory based operations}},
 year = {2016}
 }
@@ -194,10 +186,9 @@ abstract = {Continuous climb, cruise and decent operations (re-ferred as continu
 address = {Istanbul, Turkey},
 author = {Dalmau, Ramon and Prats, Xavier},
 booktitle = {6th International Congress on Research in Air Transportation (ICRAT)},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Dalmau, Prats - 2014 - How much fuel and time can be saved in a perfect flight trajectory Continuous cruise climbs vs. conventional oper.pdf:pdf},
 title = {{How much fuel and time can be saved in a perfect flight trajectory? Continuous cruise climbs vs. conventional operations}},
 year = {2014},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @inproceedings{Prats2016,
 abstract = {This paper describes a set of flight simulation experiments carried out with the DLR's Generic Cockpit Simulator (GECO). A new concept named time and energy managed operations (TEMO), which aims to enable advanced four dimensional (4D) continuous descent operations (CDO), was evaluated after three full days of experiments with qualified pilots. The experiment focused to investigate the possibility of using a 4D-controller on a modern aircraft with unmodified or only slightly modified avionic systems. This was achieved by executing the controller in an Electronic Flight Bag (EFB) and using the pilot to 'close the loop' by entering speed and other advisories into the autopilot Flight Control Unit (FCU). The outcome of the experiments include subjective (questionnaires answered by pilots) and objective (trajectory logs) data. Data analysis showed a very good acceptance (both in terms of safety and operability of the procedure) from the participating crews, only with minor suggestions to be improved in future versions of the controller and the speed advisories update rates. Good time accuracy all along the descent trajectory was also observed.},
@@ -206,7 +197,6 @@ author = {Prats, X. and Bendris, B. and Dalmau, R. and Montolio, J. and Day, B. 
 booktitle = {35th AIAA/IEEE Digital Avionics Systems Conference (DASC)},
 doi = {10.1109/DASC.2016.7778022},
 isbn = {9781509056002},
-keywords = {Continuous Descent Operations (CDO),Electronic Flight Bag (EFB),required time of arrival (RTA)},
 publisher = {IEEE},
 title = {{4D continuous descent operations supported by an electronic flight bag: A human-in-the-loop study}},
 year = {2016}
@@ -221,7 +211,7 @@ isbn = {9781538603659},
 publisher = {IEEE},
 title = {{Performance comparison of guidance strategies to accomplish RTAs during a CDO}},
 year = {2017},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @article{Dalmau2019c,
 author = {Dalmau, R. and Prats, X. and Verhoeven, R. and Bussink, F. and Heesbeen, B.},
@@ -229,6 +219,7 @@ doi = {10.2514/1.G004019},
 issn = {07315090},
 journal = {Journal of Guidance, Control, and Dynamics},
 number = {7},
+pages = {1612--1621},
 title = {{Comparison of various guidance strategies to achieve time constraints in optimal descents}},
 volume = {42},
 year = {2019}
@@ -252,7 +243,7 @@ isbn = {9781509056002},
 publisher = {IEEE},
 title = {{Performance comparison between TEMO and a typical FMS in presence of CTA and wind uncertainties}},
 year = {2016},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @inproceedings{Paweek2017,
 abstract = {Continuous descent operations (CDOs) with required times of arrival (RTAs) have been identified as a potential solution to reduce fuel consumption and noise nuisance in the maneuvering area and without compromising capacity. This paper assesses the feasibility of replacing current air traffic control sequencing and merging techniques (mainly based on radar vectoring) by a control based on RTAs over known and fixed arrival routes, aiming to enable CDOs by ensuring flight management systems have an unerring knowledge about the remaining distance to the runway threshold. The assessment has been performed for Barcelona El Prat airport (Spain), using arrival traffic for several representative days gathered from historical data. The earliest and latest trajectories at a metering fix for each inbound aircraft have been computed assuming engine-idle CDOs. Given the attainable RTA window for each aircraft, the feasibility of sequencing the arrival traffic with RTAs has been assessed by solving an aircraft sequencing problem. Results show that low traffic scenarios could be properly managed by only assigning RTAs. For certain scenarios, however, with high traffic loads and late RTA assignments, radar vectoring would still be necessary. The distance from the runway where inbound aircraft are expeced to receive the RTA has been also subject of study, demonstrating that the assignment of RTAs well before starting the descent would favor to remove radar vectoring and enable full CDOs.},
@@ -278,6 +269,7 @@ author = {Pawe{\l}ek, A. and Lichota, P. and Dalmau, R. and Prats, X.},
 doi = {10.2514/1.C034730},
 journal = {Journal of Aircraft},
 number = {2},
+pages = {481--492},
 title = {{Fuel-efficient trajectories traffic synchronization}},
 volume = {56},
 year = {2019}
@@ -313,7 +305,7 @@ isbn = {9781538603659},
 publisher = {IEEE},
 title = {{Estimation and prediction of weather variables from surveillance data using spatio-temporal Kriging}},
 year = {2017},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @article{Xu2018a,
 abstract = {The study extends previous research on linear holding strategies in cruise phases to absorb part of the air traffic flow management (ATFM) delays by allowing speed reduction (SR) on climb and descent phases too. Three different variants are analyzed, and the maximum airborne delay trajectories are computed by means of numerical optimization using an in-house trajectory generation tool, which relies on accurate performance models derived from manufacturer data. Results suggest that there exist differences on the tradeoff between fuel and time in various flight phases; therefore, including climb and descent into the SR strategy would enable the optimizer to use these differences to maximize the achievable time increase.},
@@ -322,6 +314,7 @@ doi = {10.2514/1.C034197},
 issn = {00218669},
 journal = {Journal of Aircraft},
 number = {3},
+pages = {1299--1304},
 title = {{Climb, cruise, and descent speed reduction for airborne delay without extra fuel}},
 volume = {55},
 year = {2018}
@@ -336,7 +329,7 @@ isbn = {9781538641125},
 publisher = {IEEE},
 title = {{Fast sensitivity-based optimal trajectory updates for descent operations subject to time constraints}},
 year = {2018},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @inproceedings{Dalmau2018d,
 abstract = {Trajectory predictors require information on the flight-intent in order to estimate the future state of the aircraft. At present, however, such information is not available or it is very limited and coarse (unless predicting the ownship trajectory). In this paper, an interacting multiple-model (IMM) algorithm is proposed to improve the accuracy of short-term trajectory predictions. The active guidance mode of an aircraft is estimated in real-time observing flight data collected only from automatic dependent surveillance-Broadcast (ADS-B) and transponder selective mode (Mode S) emissions. The algorithm is set up with different models corresponding to the most typical guidance modes, and provides the model that better fits the observations. The proposed algorithm is validated by means of two simulated trajectories whose guidance modes were known beforehand. Finally, the performance of the algorithm with real flight data is demonstrated through a detailed example. Promising results are obtained, showing that the active guidance mode can be unequivocally identified with a negligible delay.},
@@ -345,11 +338,10 @@ author = {Dalmau, R. and P{\'{e}}rez-Batlle, M. and Prats, X.},
 booktitle = {37th IEEE/AIAA Digital Avionics Systems Conference (DASC)},
 doi = {10.1109/DASC.2018.8569811},
 isbn = {9781538641125},
-keywords = {ADS-B,Guidance modes,Interacting multiple-model,Kalman filter,Trajectory prediction},
 publisher = {IEEE},
 title = {{Real-time identification of guidance modes in aircraft descents using surveillace data: An interacting multiple-model (IMM) filter application}},
 year = {2018},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @inproceedings{Saez2018,
 abstract = {Continuous descent operations (CDOs) with required times of arrival (RTAs) represent a potential solution to reduce the environmental impact in terminal maneuvering areas without degrading capacity. However, flight management systems require to know the remaining distance to the metering fix in order to compute the CDO complying with the CTA. This paper assesses the feasibility of replacing the current air traffic control sequencing and merging techniques, which are mainly based on open-loop vectoring, by a control based on RTAs over known and pre-defined arrival routes (i.e., with known distances to go). An optimal control problem has been formulated and solved in order to generate CDO trajectories, while a mixed-integer-linear programming model was build in order to solve the aircraft landing problem in the metering fix. The assessment has been performed for Berlin-Sch{\"{o}}nefeld airport (Germany), by using arrival traffic gathered from historical data and by taking advantage of its tromboning procedure. Furthermore, a second scenario was studied by adding more simulated traffic to the existing one. Results show that, after assigning an RTA and a route to every arriving aircraft, a time separation of 120 is ensured in the metering fix, while at least 90 seconds of separation are maintained in the the rest of waypoints of the procedure.},
@@ -367,17 +359,15 @@ abstract = {The ability to meet a controlled time of arrival during a continuous
 address = {Vienna, Austria},
 author = {Dalmau, R. and Prats, X. and Baxley, B.},
 booktitle = {13th USA/Europe Air Traffic Management Research and Development Seminar},
-keywords = {ADS-B,CDO,CTA,NMPC},
 title = {{Using wind observations from nearby aircraft to update the optimal descent trajectory in real-time}},
 year = {2019},
-bibbase_note = {Best paper award}
+bibbase_note = {<span style="color: blue"><strong>Best Paper Award</strong></span>}
 }
 @inproceedings{Prats2019,
 abstract = {In this paper a set of new performance indicators (PIs) aiming to capture the environmental impact of aircraft operations is proposed. Its contribution is threefold: optimal trajectories are computed to compare them with historical trajectories and derive several flight efficiency PIs; a family of fuel-based PIs is proposed, where fuel is estimated only from surveillance trajectory datasets not requiring confidential data; and different PIs and variants are proposed aiming to decouple and to identify different sources of environmental inefficiencies, distinguishing those that could be attributed to the different layers of air traffic management (ATM), and those attributable to the airspace users (AUs). A case study is presented for two different days, where flight inefficiency was assessed with the proposed PIs for all traffic crossing the FABEC airspace during a 24h period. Main results show that average fuel inefficiencies that could be attributable to ATM are around 250 kg (7.8{\%}) when a full free route without en-route charges scenario at maximum range operations is considered as reference for the optimal trajectories. AUs induced fuel inefficiencies (due to flying faster than the maximum range speed) have a mean around 100 kg (3{\%}). It is also concluded that fuel inefficiencies in the vertical and horizontal trajectory domains have a similar contribution to the overall flight inefficiency. Yet, horizontal inefficiencies are higher at strategic level, while are negative at tactical level for the great majority of flights.},
 address = {Vienna, Austria},
 author = {Prats, X. and Dalmau, R. and Barrado, C.},
 booktitle = {13th USA/Europe Air Traffic Management Research and Development Seminar},
-keywords = {ATM performance,Environmental impact,Flight efficiency,Fuel estimation,Post-ops,Trajectory optimization},
 title = {{Identifying the sources of flight inefficiency from historical aircraft trajectories}},
 year = {2019}
 }
@@ -419,7 +409,6 @@ abstract = {From  9-26  October 2015  the  Netherlands  Aerospace  Centre  (NLR)
 address = {N{\"{u}}rnberg, Germany},
 author = {Verhoeven, R. and Bussink, F. and Prats, X. and Dalmau, R.},
 booktitle = {27th Society of Flight Test Engineers (SFTE) European Chapter Symposium},
-file = {:Users/dalmau/Library/Application Support/Mendeley Desktop/Downloaded/Verhoeven et al. - 2016 - Flight testing Time and Energy Managed Operations (TEMO)(2).pdf:pdf},
 title = {{Flight testing Time and Energy Managed Operations (TEMO)}},
 year = {2016}
 }
