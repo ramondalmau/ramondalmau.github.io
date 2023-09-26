@@ -1,11 +1,33 @@
-@inproceedings{Dalmau2023c,
+@article{Dalmau2023c,
+title = {The effectiveness of supervised clustering for characterising flight diversions due to weather},
+journal = {Expert Systems with Applications},
+pages = {121652},
+year = {2023},
+issn = {0957-4174},
+doi = {10.1016/j.eswa.2023.121652},
+author = {Dalmau, R. and Gawinowski, G.},
+abstract = {Flight diversions due to adverse weather have a significant negative impact on airspace users, airports, and the environment. Previous work proposed a tree-based model that learned which flights are more likely to be diverted due to adverse weather conditions at the destination airport from historical traffic and weather data. This model was trained using confident learning to exclude from training unpredictable flight diversions caused by reasons other than weather, such as medical emergencies or technical problems. Aggregated performance metrics computed on the test set demonstrated high precision and moderate recall, and inspection of the Shapley values unravelled the most important features. Initial human observations made during the live trial, however, have raised a potential connection between the quality of predictions and the specific weather conditions that lead to flight diversions. This study aims to provide empirical evidence to support this hypothesis. To accomplish this, a data-driven methodology should be used to characterise the main conditions that cause flight diversions. Concurrently, the effectiveness of the model in each of these conditions should be evaluated. The dataset under consideration, however, presents a challenge because it contains a plethora of high-cardinality categorical features (e.g., destination airport and aircraft operator) as well as skewed numerical features with a wide range of scales (e.g., visibility and wind gust). This scenario significantly increases the difficulty of characterising the main conditions that cause flight diversions and conducting subsequent analyses even with established methods like factor analysis of mixed data. To address this challenge, this paper proposes to utilise supervised clustering, a method that combines state-of-the-art feature attribution, dimensionality reduction, and clustering algorithms to identify the most representative decisions of a model. Following that, the distinctive characteristics of the various decisions (e.g., extreme obscuration at the airport), each associated with a cluster, are determined by examining them. Finally, conventional classification and uncertainty metrics are computed for each cluster to assess the performance of the model. This paper shows that supervised clustering is effective in characterising flight diversions due to weather, and provides valuable insights into the performance of the model in different conditions, highlighting situations where predictions require careful consideration.}
+}
+@article{Dalmau2023b,
+author = {Dalmau, R. and Attia, J. and Gawinowski, G.},
+title = {Modelling the Impact of Adverse Weather on Airport Peak Service Rate with Machine Learning},
+journal = {Atmosphere},
+volume = {14},
+year = {2023},
+number = {10},
+article-number = {1476},
+issn = {2073-4433},
+abstract = {Accurate prediction of traffic demand and airport capacity plays a crucial role in minimising ground delays and airborne holdings. This paper focuses on the latter aspect. Adverse weather conditions present significant challenges to airport operations and can substantially reduce capacity. Consequently, any predictive model, regardless of its complexity, should account for weather conditions when estimating the airport capacity. At present, the sole shared platform for airport capacity information in Europe is the EUROCONTROL Public Airport Corner, where airports have the option to voluntarily report their capacities. These capacities are presented in tabular form, indicating the maximum number of hourly arrivals and departures for each possible runway configuration. Additionally, major airports often provide a supplementary table showing the impact of adverse weather in a somewhat approximate manner (e.g., if the visibility is lower than 100 m, then arrival capacity decreases by 30%). However, these tables only cover a subset of airports, and their generation is not harmonised, as different airports may use different methodologies. Moreover, these tables may not account for all weather conditions, such as snow, strong winds, or thunderstorms. This paper presents a machine learning approach to learn mapping from weather conditions and runway configurations to the 99th percentile of the delivered throughput from historical data. This percentile serves as a capacity proxy for airports operating at or near capacity. Unlike previous attempts, this paper takes a novel approach, where a single model is trained for several airports, leveraging the generalisation capabilities of cutting-edge machine learning algorithms. The results of an experiment conducted using 2 years of historical traffic and weather data for the top 45 busiest airports in Europe demonstrate better alignment in terms of mean pinball error with the observed departure and arrival throughput when compared to the operational capacities reported in the EUROCONTROL Public Airport Corner. While there is still room for improvement, this system has the potential to assist airports in defining more reasonable capacity values, as well as aiding airlines in assessing the impact of adverse weather on their flights.},
+doi = {10.3390/atmos14101476}
+}
+@inproceedings{Pesce2023,
 address = {London, UK},
 author = {Pesce, E. and Dalmau, R. and Montana, G. and Owen, L.},
 booktitle = {Citizen-Centric Multiagent Systems (CMAS)},
 title = {{Benchmarking Multi-agent Deep Reinforcement Learning for Cooperative Missions of Unmanned Aerial Vehicles}},
 year = {2023}
 }
-@inproceedings{Dalmau2023b,
+@inproceedings{Sanchez2023,
 address = {Savannah, Georgia},
 author = {Sanchez, M. and Zheng, D. and Gil, P. and Gawinowski, G. and Dalmau, R. and Soler, M. and Garcia-Heras, J. and Martinez, I. and Jardines, A.},
 booktitle = {15th USA Europe Air Traffic Management Research and Development Seminar},
