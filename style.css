@@ -1,11 +1,112 @@
-body {
-    padding: 1rem;
+/* ── Base ─────────────────────────────────────────── */
+
+:root {
+  --accent: #1a6fb5;
+  --accent-hover: #13507e;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --bg: #fdfdfd;
+  --sidebar-bg: #f8fafc;
+  --border: #e2e8f0;
 }
 
-.spacer {
-    height: 3rem;
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text-primary);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
 }
+
+/* ── Profile photo ───────────────────────────────── */
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.profile-photo:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ── Sidebar ─────────────────────────────────────── */
+
+.sidebar {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+.employer-link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.employer-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* ── Link list ───────────────────────────────────── */
+
+.link-list li + li {
+  margin-top: 0.5rem;
+}
+
+.link-list a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link-list a:hover {
+  color: var(--accent);
+}
+
+.link-list .bi {
+  margin-right: 0.35rem;
+  color: var(--accent);
+}
+
+/* ── Section titles ──────────────────────────────── */
+
+.section-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+/* ── Footer ──────────────────────────────────────── */
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+}
+
+/* ── BibBase overrides ───────────────────────────── */
 
 .bibbase_amazon {
-    display: none;
+  display: none;
+}
+
+/* ── Responsive tweaks ───────────────────────────── */
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: static;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
 }
